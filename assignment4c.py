@@ -22,4 +22,4 @@ df_table1 = TableOne(df, columns=df_columns,
     categorical=df_categories, groupby=df_groupby, pval=False)
 
 print(df_table1.tabulate(tablefmt = "fancy_grid"))
-df_table1.to_csv('/prettytable.csv')
+df_table1.to_csv('new csv/prettytable.csv')
