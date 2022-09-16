@@ -14,11 +14,12 @@ rp.summary_cont(df[['']])
 #getting descriptive of categorical variables
 rp.summary_cat(df[[]])
 
-df_columns = ['Age', 'HR', 'Group', 'sBP', 'Smoke']
-df_categories = ['Smoke', 'Group']
-df_groupby = ['Smoke']
+df_columns = ['Age Group',  'CCS Procedure Code', 'APR DRG Code', 'Type of Admission', 'Total Costs']
+df_categories = ['Age Group', 'Type of Admission']
+df_groupby = ['Age Group']
 # df2['Vocation'].value_counts()
 df_table1 = TableOne(df, columns=df_columns, 
     categorical=df_categories, groupby=df_groupby, pval=False)
+
 print(df_table1.tabulate(tablefmt = "fancy_grid"))
-df2_table1.to_csv('descriptive/example1/data/test2.csv')
+df_table1.to_csv('/prettytable.csv')
