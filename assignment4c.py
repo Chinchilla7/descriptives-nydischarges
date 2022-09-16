@@ -2,7 +2,7 @@ import researchpy as rp
 import pandas as pd
 from tableone import TableOne, load_dataset
 
-df = pd.read_csv('')
+df = pd.read_csv('data/Hospital_Inpatient_Discharges__SPARCS_De-Identified___2016.csv')
 df.columns
 
 #Prints out descriptive information for DataFrame.
