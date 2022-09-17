@@ -1,17 +1,11 @@
-,,Grouped by Age Group,Grouped by Age Group,Grouped by Age Group,Grouped by Age Group,Grouped by Age Group,Grouped by Age Group,Grouped by Age Group
-,,Missing,Overall,0 to 17,18 to 29,30 to 49,50 to 69,70 or Older
-n,,,2343429,347635,243645,454931,654530,642688
-"Age Group, n (%)",0 to 17,0,347635 (14.8),347635 (100.0),,,,
-"Age Group, n (%)",18 to 29,,243645 (10.4),,243645 (100.0),,,
-"Age Group, n (%)",30 to 49,,454931 (19.4),,,454931 (100.0),,
-"Age Group, n (%)",50 to 69,,654530 (27.9),,,,654530 (100.0),
-"Age Group, n (%)",70 or Older,,642688 (27.4),,,,,642688 (100.0)
-"CCS Procedure Code, mean (SD)",,0,104.6 (89.6),128.1 (98.2),116.4 (76.8),112.1 (81.1),98.0 (89.3),88.9 (91.3)
-"APR DRG Code, mean (SD)",,0,416.5 (242.6),537.3 (206.6),528.1 (199.5),476.7 (227.5),358.6 (244.6),325.3 (227.8)
-"Type of Admission, n (%)",Elective,0,441247 (18.8),17603 (5.1),64812 (26.6),124780 (27.4),145326 (22.2),88726 (13.8)
-"Type of Admission, n (%)",Emergency,,1498961 (64.0),94130 (27.1),138933 (57.0),277865 (61.1),467717 (71.5),520316 (81.0)
-"Type of Admission, n (%)",Newborn,,224779 (9.6),224580 (64.6),46 (0.0),79 (0.0),45 (0.0),29 (0.0)
-"Type of Admission, n (%)",Not Available,,435 (0.0),31 (0.0),80 (0.0),106 (0.0),111 (0.0),107 (0.0)
-"Type of Admission, n (%)",Trauma,,6629 (0.3),497 (0.1),1152 (0.5),1493 (0.3),1741 (0.3),1746 (0.3)
-"Type of Admission, n (%)",Urgent,,171378 (7.3),10794 (3.1),38622 (15.9),50608 (11.1),39590 (6.0),31764 (4.9)
-"Total Costs, mean (SD)",,0,15721.3 (31591.7),9514.7 (36439.6),10919.5 (23385.1),13323.9 (27032.2),19470.0 (34773.2),18778.0 (30125.9)
+,,Grouped by Type of Admission,Grouped by Type of Admission,Grouped by Type of Admission,Grouped by Type of Admission,Grouped by Type of Admission,Grouped by Type of Admission,Grouped by Type of Admission,Grouped by Type of Admission
+,,Missing,Overall,Elective,Emergency,Newborn,Not Available,Trauma,Urgent
+n,,,2343429,441247,1498961,224779,435,6629,171378
+"CCS Procedure Code, mean (SD)",,0,104.6 (89.6),123.0 (65.5),91.8 (93.2),146.4 (93.4),98.2 (82.5),115.9 (81.7),113.8 (79.6)
+"APR DRG Code, mean (SD)",,0,416.5 (242.6),409.5 (214.2),381.2 (251.3),637.5 (13.1),444.8 (240.4),370.6 (307.8),455.5 (230.9)
+"Type of Admission, n (%)",Elective,0,441247 (18.8),441247 (100.0),,,,,
+"Type of Admission, n (%)",Emergency,,1498961 (64.0),,1498961 (100.0),,,,
+"Type of Admission, n (%)",Newborn,,224779 (9.6),,,224779 (100.0),,,
+"Type of Admission, n (%)",Not Available,,435 (0.0),,,,435 (100.0),,
+"Type of Admission, n (%)",Trauma,,6629 (0.3),,,,,6629 (100.0),
+"Type of Admission, n (%)",Urgent,,171378 (7.3),,,,,,171378 (100.0)
