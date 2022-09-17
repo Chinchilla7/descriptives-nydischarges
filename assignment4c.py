@@ -5,17 +5,20 @@ from tableone import TableOne, load_dataset
 df = pd.read_csv('data/Hospital_Inpatient_Discharges__SPARCS_De-Identified___2016.csv')
 df.columns
 
-#Prints out descriptive information for DataFrame.
+#Prints out descriptive information for DataFrame using researchpy
 rp.codebook(df)
 
-#getting descriptive of single/continuous variables
-rp.summary_cont(df[['Facility Id','APR DRG Code', 'Type of Admission']])
+#getting descriptive of single/continuous variables  using researchpy
+rp.summary_cont(df[['Facility Id','APR DRG Code', 'Operating Certificate Number']])
 
-#getting descriptive of categorical variables
-rp.summary_cat(df[['Age Group','Facility Name']])
+#getting descriptive of categorical variables  using researchpy
+rp.summary_cat(df[['Facility Name']])
 
+# quick check of data type 
 df['CCS Procedure Code']
-df['Type of Admission'].value_counts()
+# quick count of data variables
+df['Operating Certificate Number'].value_counts()
+
 # list of columns to be included in Table 1:
 df_columns = ['CCS Procedure Code', 'APR DRG Code', 'Type of Admission']
 # list of columns containing categorical variables:
