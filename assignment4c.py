@@ -9,17 +9,23 @@ df.columns
 rp.codebook(df)
 
 #getting descriptive of single/continuous variables
-rp.summary_cont(df[['']])
+rp.summary_cont(df[['Facility Id','APR DRG Code', 'Type of Admission']])
 
 #getting descriptive of categorical variables
-rp.summary_cat(df[[]])
+rp.summary_cat(df[['Age Group','Facility Name']])
 
-df_columns = ['Age Group',  'CCS Procedure Code', 'APR DRG Code', 'Type of Admission', 'Total Costs']
-df_categories = ['Age Group', 'Type of Admission']
-df_groupby = ['Age Group']
-# df2['Vocation'].value_counts()
+df['CCS Procedure Code']
+df['Type of Admission'].value_counts()
+# list of columns to be included in Table 1:
+df_columns = ['CCS Procedure Code', 'APR DRG Code', 'Type of Admission']
+# list of columns containing categorical variables:
+df_categories = ['Type of Admission']
+# a categorical variable for stratification:
+df_groupby = ['Type of Admission']
+# Creating an instance of TableOne with the input arguments:
 df_table1 = TableOne(df, columns=df_columns, 
     categorical=df_categories, groupby=df_groupby, pval=False)
-
+#print table onto terminal
 print(df_table1.tabulate(tablefmt = "fancy_grid"))
+
 df_table1.to_csv('new csv/prettytable.csv')
