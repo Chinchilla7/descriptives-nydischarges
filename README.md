@@ -1,1 +1,1 @@
-# descriptives-nydischarges
+Using tableone and researchpy, this repo conducts some descriptive statitstics on data obtained from  https://health.data.ny.gov/Health/Hospital-Inpatient-Discharges-SPARCS-De-Identified/gnzp-ekau.
